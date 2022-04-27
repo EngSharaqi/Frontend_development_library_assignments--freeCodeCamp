@@ -1,0 +1,25 @@
+<!-- Your code should use the @each directive.
+
+Your .blue-bg class should have a background-color of blue.
+
+Your .black-bg class should have a background-color of black.
+
+Your .red-bg class should have a background-color of red. -->
+
+<style type='text/scss'>
+
+@each $color in blue, black, red {
+  .#{$color}-bg{
+    background-color: $color;
+  }
+}
+
+  div {
+    height: 200px;
+    width: 200px;
+  }
+</style>
+
+<div class="blue-bg"></div>
+<div class="black-bg"></div>
+<div class="red-bg"></div>
